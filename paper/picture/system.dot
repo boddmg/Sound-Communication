@@ -1,0 +1,19 @@
+digraph G {
+	compound = true;
+    rankdir=TB;
+    splines=line;
+    nodesep=.05;
+
+	node[style=solid, shape=box];
+	input->s1->s2->s3->s4->s5->s6->s7->result;
+	input[label="信息"];
+	s1[label="调制"];
+	s2[label="声卡"];
+	s3[label="喇叭——播放声波"];
+	s4[label="信道"];
+	s5[label="麦克风"];
+	s6[label="声卡"];
+	s7[label="解调"];
+	result[label="信息"];
+
+}
